@@ -12,6 +12,9 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background: #333;
@@ -31,6 +34,9 @@
         nav ul li {
             margin-right: 20px;
         }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -48,8 +54,9 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
         }
-       footer {
+        footer {
             background: #333;
             color: #fff;
             text-align: center;
@@ -64,7 +71,7 @@
 </head>
 <body>
     <header>
-        <h1>Geography and Coding</h1>
+        <h1>Yapay Zeka ve Coğrafi Bilgi Sistemleri (CBS)</h1>
     </header>
     <nav>
         <ul>
@@ -74,12 +81,29 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <h2>Geo-Coding'in Geleceği</h2>
-        <p>Geo-coding, coğrafi verilerin analizi ve haritalanması için önemli bir araçtır. Gelecekte, geo-coding teknolojisinin daha da gelişmesi ve yaygınlaşması beklenmektedir...</p>
-        <p>Geo-coding teknolojisi, coğrafi bilgilerin toplanması, analiz edilmesi ve görselleştirilmesi için kullanılan bir yöntemdir...</p>
-        <!-- Add the rest of your blog content here -->
-    </div>
+    <main>
+        <div class="container">
+            <h2>Geo-Coding: Coğrafi Konum Bilgilerinin Önemi ve Geleceği</h2>
+            <p>Geo-coding, coğrafi konum bilgilerini temsil eden ve bu bilgileri işleme, analiz etme ve görselleştirme süreçlerinde kullanılan bir kavramdır. Gelecekte geo-coding'in önemi ve kullanım alanları şunlar olabilir:</p>
+            
+            <h3>Yer Temelli Hizmetlerin Gelişimi</h3>
+            <p>Mobil uygulamalar, navigasyon sistemleri ve konum tabanlı hizmetlerin yaygınlaşmasıyla birlikte geo-coding'in önemi artacak. Bu hizmetlerin gelişimiyle birlikte daha hassas ve doğru konum belirleme ve yönlendirme sağlanabilir.</p>
+            
+            <h3>Coğrafi Veri Analitiği</h3>
+            <p>Büyük veri analitiği ve coğrafi bilgi sistemleri (GIS) entegrasyonu ile geo-coding, coğrafi verilerin analiz edilmesi ve karar destek sistemlerinde kullanılması açısından kritik bir rol oynayacak. Özellikle afet yönetimi, çevresel izleme ve şehir planlama gibi alanlarda etkili olabilir.</p>
+            
+            <h3>IoT ve Sensör Ağları</h3>
+            <p>Nesnelerin İnterneti (IoT) ve sensör ağları ile toplanan büyük miktardaki coğrafi verilerin etkili bir şekilde yönetilmesi ve işlenmesi için geo-coding önemli bir araç olacak. Bu verilerin analizi, akıllı şehirlerin ve akıllı tarımın gelişimine katkı sağlayabilir.</p>
+            
+            <h3>Yapay Zeka ve Makine Öğrenimi Entegrasyonu</h3>
+            <p>Yapay zeka ve makine öğrenimi algoritmaları, geo-coding ile entegre edilerek coğrafi verilerin daha derinlemesine analiz edilmesi ve tahmin modellerinin geliştirilmesi sağlanabilir. Örneğin, tahmin modelleri için coğrafi konumun etkisi dikkate alınabilir.</p>
+            
+            <h3>Sosyal ve Ekonomik Uygulamalar</h3>
+            <p>Geo-coding, sosyal bilimlerde (örneğin, epidemiyoloji, nüfus çalışmaları) ve ekonomik analizlerde (pazar araştırmaları, konum tabanlı hizmetler) kullanılarak daha hassas veri odaklı kararlar alınabilir.</p>
+            
+            <p>Geo-coding'in bu alanlarda giderek artan önemi, coğrafi verilerin daha etkili bir şekilde yönetilmesini ve kullanılmasını sağlayarak çeşitli sektörlerdeki inovasyonu destekleyebilir.</p>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Ermiş Geo-Coding</p>
         <img src="path_to_your_logo.png" alt="Ermiş Geo-Coding" height="40">
