@@ -11,7 +11,19 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    flex: 1;
+    text-align: left;
+}
+
+header h1 {
+    flex: 2;
     text-align: center;
 }
 
@@ -23,24 +35,46 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 8px 16px;
+    display: block;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #555;
+    border-radius: 4px;
 }
 
 main {
     flex: 1;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.about, .home {
+    width: 45%;
 }
 
 footer {
@@ -48,4 +82,13 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100px;
 }
