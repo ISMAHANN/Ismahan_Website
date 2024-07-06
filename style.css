@@ -1,4 +1,4 @@
-body {
+tebody {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 nav ul li {
@@ -91,7 +91,4 @@ footer img {
     display: block;
     margin: 10px auto;
     max-width: 100px;
-}
-.blog-section {
-    text-align: left;
 }
