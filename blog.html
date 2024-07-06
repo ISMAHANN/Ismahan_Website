@@ -43,22 +43,31 @@
             padding: 2rem;
         }
         #blog-section {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
         }
-        #blog-section h2 {
-            font-size: 2rem;
+        .blog-card {
+            display: flex;
+            background: #fff;
+            padding: 1rem;
             margin-bottom: 1rem;
-            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        #blog-section p {
-            font-size: 1rem;
+        .blog-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+        .blog-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .blog-card p {
+            margin: 0.5rem 0;
             text-align: justify;
-            margin-bottom: 1rem;
         }
         footer {
             background: #333;
@@ -90,12 +99,32 @@
     <main>
         <section id="blog-section">
             <h2>Blog</h2>
-            <p>Let's Start</p>
+            <div class="blog-card">
+                <img src="image1.jpg" alt="Geo-Coding'in Geleceği">
+                <div>
+                    <h3>Geo-Coding'in Geleceği</h3>
+                    <p>Geo-coding, coğrafi verilerin analizi ve haritalanması için önemli bir araçtır. Gelecekte, geo-coding teknolojisinin daha da gelişmesi ve yaygınlaşması beklenmektedir...</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="image2.jpg" alt="Yapay Zeka ve Coğrafi Bilgi Sistemleri">
+                <div>
+                    <h3>Yapay Zeka ve Coğrafi Bilgi Sistemleri</h3>
+                    <p>Yapay zeka, coğrafi bilgi sistemleri (GIS) ile birleştiğinde, büyük veri setlerinin analizinde ve daha doğru tahminlerde bulunmada güçlü bir araç haline gelmektedir...</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="image3.jpg" alt="Doğal Afet Yönetiminde Geo-Coding">
+                <div>
+                    <h3>Doğal Afet Yönetiminde Geo-Coding</h3>
+                    <p>Doğal afetlerin yönetiminde, coğrafi bilgi sistemleri ve geo-coding teknolojileri kritik bir rol oynamaktadır. Bu teknolojiler, afet öncesi ve sonrası planlamada kullanılır...</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Ermiş Geo-Coding</p>
-        <img src="path_to_your_logo.png" alt="Ermiş Geo-Coding" height="40">
+        <img src="path_to_your_logo.png" alt="Ermiş Geo-Coding" height="60">
     </footer>
 </body>
 </html>
