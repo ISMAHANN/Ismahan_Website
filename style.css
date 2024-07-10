@@ -72,7 +72,7 @@ main {
 }
 
 .blog-card {
-    flex: 1 1 300px; /* Esneklik ayarı */
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -80,14 +80,14 @@ main {
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* İçeriğin sığması için taşma kontrolü */
+    overflow: hidden;
 }
 
 .blog-card img {
-    width: 100%; /* Resimlerin genişliğini ayarla */
-    height: auto; /* Oranı koruyarak yükseklik ayarı */
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 1rem; /* Resim ile metin arasına boşluk bırak */
+    margin-bottom: 1rem;
 }
 
 .blog-card h3 {
@@ -105,9 +105,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 footer img {
