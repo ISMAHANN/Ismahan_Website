@@ -1,4 +1,4 @@
-tebody {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -66,15 +66,38 @@ main {
     justify-content: center;
 }
 
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+.container {
+    max-width: 1000px;
     width: 100%;
 }
 
-.about, .home {
-    width: 45%;
+.blog-card {
+    flex: 1 1 300px; /* Esneklik ayarı */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* İçeriğin sığması için taşma kontrolü */
+}
+
+.blog-card img {
+    width: 100%; /* Resimlerin genişliğini ayarla */
+    height: auto; /* Oranı koruyarak yükseklik ayarı */
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Resim ile metin arasına boşluk bırak */
+}
+
+.blog-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.blog-card p {
+    margin: 0.5rem 0;
+    text-align: justify;
 }
 
 footer {
