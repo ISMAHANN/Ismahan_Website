@@ -63,6 +63,7 @@
             margin-bottom: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
         }
         .card img {
             width: 150px;
@@ -71,11 +72,14 @@
             border-radius: 8px;
             margin-right: 1rem;
         }
-        .card h3 {
+        .card-content {
+            flex: 1;
+        }
+        .card-content h3 {
             margin: 0;
             font-size: 1.5rem;
         }
-        .card p {
+        .card-content p {
             margin: 0.5rem 0;
             text-align: justify;
         }
@@ -111,7 +115,7 @@
                 <a href="blog1.html">
                     <img src="image1.jpg" alt="Geo-Coding'in Geleceği">
                 </a>
-                <div>
+                <div class="card-content">
                     <h3><a href="blog1.html">The Future of Geo-Coding</a></h3>
                     <p>Geo-coding is an important tool for analyzing and mapping geographic data. In the future, geo-coding technology is expected to further develop and become widespread...</p>
                 </div>
@@ -120,7 +124,7 @@
                 <a href="blog2.html">
                     <img src="image2.jpg" alt="Artificial Intelligence and Geographic Information Systems">
                 </a>
-                <div>
+                <div class="card-content">
                     <h3><a href="blog2.html">Artificial Intelligence and Geographic Information Systems</a></h3>
                     <p>When combined with geographic information systems (GIS), artificial intelligence becomes a powerful tool in analyzing large data sets and making more accurate predictions...</p>
                 </div>
@@ -129,7 +133,7 @@
                 <a href="blog3.html">
                     <img src="image3.jpg" alt="Geo-Coding in Natural Disaster Management">
                 </a>
-                <div>
+                <div class="card-content">
                     <h3><a href="blog3.html">Geo-Coding in Natural Disaster Management</a></h3>
                     <p>Geographic Information Systems in the management of natural disasters and geo-coding technologies play a critical role. These technologies once geographic Disaster Information Systems and geo-coding technologies play a critical role in the management of natural disasters. These technologies are used for pre- and post-disaster planning...</p>
                 </div>
@@ -138,7 +142,7 @@
                 <a href="blog4.html">
                     <img src="image4.jpg" alt="Random Forest Algorithm: A Comprehensive Overview">
                 </a>
-                <div>
+                <div class="card-content">
                     <h3><a href="blog4.html">Random Forest Algorithm: A Comprehensive Overview</a></h3>
                     <p>The Random Forest algorithm is a powerful ensemble learning method used for classification and regression tasks. It builds multiple decision trees and merges their results to improve accuracy and control overfitting...</p>
                 </div>
