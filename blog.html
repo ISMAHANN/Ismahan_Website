@@ -12,6 +12,9 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background: #333;
@@ -25,28 +28,35 @@
             text-align: center;
             background: #444;
             margin: 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
             padding: 0.5rem 1rem;
-            display: inline-block;
+            display: block;
         }
         nav ul li a:hover {
             background: #555;
+            border-radius: 4px;
         }
-        main {
-            padding: 2rem;
-        }
-        #blog-section {
+        .container {
             max-width: 1000px;
             margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
         }
-        .blog-card {
+        .card {
             display: flex;
             background: #fff;
             padding: 1rem;
@@ -54,18 +64,18 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .blog-card img {
+        .card img {
             width: 150px;
             height: 150px;
             object-fit: cover;
             border-radius: 8px;
             margin-right: 1rem;
         }
-        .blog-card h3 {
+        .card h3 {
             margin: 0;
             font-size: 1.5rem;
         }
-        .blog-card p {
+        .card p {
             margin: 0.5rem 0;
             text-align: justify;
         }
@@ -95,9 +105,9 @@
         </ul>
     </nav>
     <main>
-        <section id="blog-section">
+        <div class="container" id="blog-section">
             <h2>Blog</h2>
-            <div class="blog-card">
+            <div class="card">
                 <a href="blog1.html">
                     <img src="image1.jpg" alt="Geo-Coding'in Geleceği">
                 </a>
@@ -106,7 +116,7 @@
                     <p>Geo-coding is an important tool for analyzing and mapping geographic data. In the future, geo-coding technology is expected to further develop and become widespread...</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="card">
                 <a href="blog2.html">
                     <img src="image2.jpg" alt="Artificial Intelligence and Geographic Information Systems">
                 </a>
@@ -115,16 +125,16 @@
                     <p>When combined with geographic information systems (GIS), artificial intelligence becomes a powerful tool in analyzing large data sets and making more accurate predictions...</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="card">
                 <a href="blog3.html">
                     <img src="image3.jpg" alt="Geo-Coding in Natural Disaster Management">
                 </a>
                 <div>
                     <h3><a href="blog3.html">Geo-Coding in Natural Disaster Management</a></h3>
-                    <p>Geographic Information Systems in the management of natural disasters and geo-coding technologies plays a critical role. These technologies oncgeographic Disaster Information Systems and geo-coding technologies play a critical role in the management of natural disasters. These technologies are used for pre - and post-disaster planning...</p>
+                    <p>Geographic Information Systems in the management of natural disasters and geo-coding technologies play a critical role. These technologies once geographic Disaster Information Systems and geo-coding technologies play a critical role in the management of natural disasters. These technologies are used for pre- and post-disaster planning...</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="card">
                 <a href="blog4.html">
                     <img src="image4.jpg" alt="Random Forest Algorithm: A Comprehensive Overview">
                 </a>
@@ -133,7 +143,7 @@
                     <p>The Random Forest algorithm is a powerful ensemble learning method used for classification and regression tasks. It builds multiple decision trees and merges their results to improve accuracy and control overfitting...</p>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Ermiş Geo-Coding</p>
