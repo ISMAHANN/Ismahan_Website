@@ -48,7 +48,7 @@
         }
         .blog-card {
             display: flex;
-            flex-direction: row; /* Kartın içeriğinin yatay olarak düzenlenmesi */
+            flex-direction: column; /* Kartın içeriğinin sütun olarak düzenlenmesi */
             background: #fff;
             padding: 1rem;
             margin-bottom: 1.5rem;
@@ -56,25 +56,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden; /* İçeriğin sığması için taşma kontrolü */
         }
-
         .blog-card img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            width: 100%; /* Resimlerin genişliğini ayarla */
+            height: auto; /* Oranı koruyarak yükseklik ayarı */
             border-radius: 8px;
-            margin-right: 1rem;
+            margin-bottom: 1rem; /* Resim ile metin arasına boşluk bırak */
         }
-
         .blog-card h3 {
             margin: 0;
             font-size: 1.5rem;
-            flex: 1; /* Başlık kısmının genişlemesi için flex özelliği eklendi */
         }
-
         .blog-card p {
             margin: 0.5rem 0;
             text-align: justify;
-            flex: 1; /* Metin kısmının genişlemesi için flex özelliği eklendi */
         }
         footer {
             background: #333;
