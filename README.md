@@ -1,2 +1,2 @@
 # username.github.io
-https://ismahann.github.io/ismahan/
+https://ismahann.github.io/Ismahan_Website/
